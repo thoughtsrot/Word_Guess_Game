@@ -6,21 +6,34 @@ body {
 
   background-image: url(../images/alcohol-beverage-black-background-1028637.jpg);
   background-size: cover;
+  background: rgba(0.8);
   color: whitesmoke;
   font-family: 'Encode  Condensed', sans-serif;
 
 }
 
 h1 {
-/* font-family: 'Kaushan Script', cursive; */
+font-family: 'Kaushan Script', cursive;
 /* font-family: 'Special Elite', cursive; */
-font-family: 'Fredericka the Great', cursive;
+/* font-family: 'Fredericka the Great', cursive; */
 text-shadow: 2px 2px 3px #FF0000;
 }
 
-.score {
+.score .instruct #cocktailText #userGuesses{
 
-  text-shadow: 0 0 3px black;
+  text-shadow: 3px 3px 3px gray;
   
+}
+
+.instruct {
+  font-size: 20px;
+}
+
+.puzzleBox {
+  border: 1px solid white;
+}
+
+#cocktailText {
+  font-size: 25px;
 }
 
