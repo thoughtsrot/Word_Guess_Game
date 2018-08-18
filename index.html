@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Word Cocktail</title>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Special+Elite" rel="stylesheet">
+
+
 </head>
+
 <body>
 
-  <h1>Welcome to Word Cocktails!</h1>
-  <h2>You have ten shots to mix the right ingredients to make a word cocktail!</h2>
-
-  <div>
-  Add a letter to the mix to get started.
+  <div class="row">
+    <h1 class="col-6 mx-auto py-3 text-center">Welcome to Word Cocktails!</h1>
   </div>
 
-  <br><br>
-  <h3>What'll it be?</h3>
+  <div class="row">
+    <h3 class="col-6 mx-auto py-3 text-center">
+      You have ten shots. Guess all the right ingredients to make a word cocktail!
+    </h3>
+  </div>
 
-  <p>Your Cocktail:</p>
-  <p id="cocktailText"></p>
+  <div class="row">
+    <div class="col-6 text-center mx-auto">
+      Add a letter to the mix to get started.
+    </div>
+  </div>
 
-  <br>
 
-  <div id="userGuesses">Wrong Ingredients: </div>
+  <div class="row">
+    <div class="col-4 mx-auto py-4 text-center">
+      <p>What'll it be?</p>
+      <p id="cocktailText"></p>
+    </div>
+  </div>
 
-  <br>
+  <div class="row">
+    <div class="col-11 mx-auto" id="userGuesses">Wrong Ingredients: </div>
+  </div>
 
   <div id=gameAlerts></div>
 
-  <br>
-
-  <div id="guessRemain">Ingredients left: 10</div>
-  <div id="wins">Wins: 0</div>
-  <div id="losses">Losses: 0</div>
+  <div class="col-10 mx-auto my-3">
+    <div class="row">
+      <div class="col-4 score">
+        <div id="guessRemain">Ingredients left: 10</div>
+        <div id="wins">Wins: 0</div>
+        <div id="losses">Losses: 0</div>
+      </div>
+    </div>
+  </div>
 
   <script src="Assets/javascript/game.js"></script>
-  
+
 </body>
+
 </html>
