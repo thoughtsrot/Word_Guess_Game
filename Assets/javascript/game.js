@@ -102,9 +102,7 @@ document.onkeyup = function (event) {
                 document.getElementById("wins").innerHTML = ("Wins: " + $wins);
                 newCocktail();
                 alert("Nice job! That's a tasty lookin' drink! Play again?");
-                
-                console.log("foo")
-            
+                            
               }
 
 
@@ -132,9 +130,7 @@ document.onkeyup = function (event) {
             document.getElementById("losses").innerHTML = ("Losses: " + $losses);
             newCocktail();
             alert("You ran out of ingredients. Try again!");
-            
-            console.log("foo")
-        
+                    
           }
 
         }
