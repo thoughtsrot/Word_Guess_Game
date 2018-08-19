@@ -17,48 +17,43 @@
 <body>
 
   <div class="row">
-    <h1 class="col-6 mx-auto py-3 text-center">Welcome to Word Cocktails!</h1>
+    <h1 class="col-12 col-md-6 mx-auto py-3 text-center">Welcome to Word Cocktails!</h1>
   </div>
 
   <div class="row">
-    <h4 class="col-6 mx-auto py-3 text-center rules">
+    <h4 class="col-12 col-md-6 mx-auto py-3 text-center rules">
       You have ten shots. Guess all the right ingredients to make a word cocktail!
     </h4>
   </div>
 
   <div class="row">
-    <div class="col-6 text-center mx-auto instruct">
-      Add a letter to the mix to get started.
-    </div>
+    <div class="col-12 col-md-6 text-center mx-auto py-3 instruct" id="gameAlerts"></div>
   </div>
 
 
-  <div class="row">
-    <div class="col-4 mx-auto py-4 text-center puzzleBox">
-      <p id="miniHead">What'll it be?</p>
-      <p id="cocktailText"></p>
-    </div>
-  </div>
-
-  <div class="row">
-      <div class="col-11 mx-auto" id=gameAlerts>Let's Mix it Up!</div>
-    </div>
-
-  <div class="row">
-    <div class="col-11 mx-auto" id="userGuesses">Wrong Ingredients: </div>
-  </div>
-
-  <div class="col-10 mx-auto my-3">
     <div class="row">
-      <div class="col-4 score">
-        <div id="guessRemain">Ingredients left: 10</div>
-        <div id="wins">Wins: 0</div>
-        <div id="losses">Losses: 0</div>
+      <div class="col-12 col-md-4 mx-auto py-4 text-center puzzleBox">
+        <p id="miniHead">What'll it be?</p>
+        <p id="cocktailText"></p>
       </div>
     </div>
-  </div>
 
-  <script src="Assets/javascript/game.js"></script>
+    <div class="row">
+      <div class="col-12 col-md-11 ml-4 px-2" id="userGuesses">Wrong Ingredients: </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10 my-3">
+
+        <div class="col-4 score">
+          <div id="guessRemain">Ingredients left: 10</div>
+          <div id="wins">Wins: 0</div>
+          <div id="losses">Losses: 0</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Assets/javascript/game.js"></script>
 
 </body>
 

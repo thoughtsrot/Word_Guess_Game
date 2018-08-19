@@ -22,8 +22,8 @@ var $losses = 0;
 //Define function that selects new Cocktail from array based on the INDEX value of variable randomCocktail //
 function newCocktail() {
 
-  // Attaches to id applied in html doc to insert random string from array  //
-  
+  var randomCocktail = Math.floor(Math.random() * wordCocktails.length);
+  puzzle = wordCocktails[randomCocktail];
   for (i = 0; i < puzzle.length; i++) {
 
 
@@ -38,7 +38,9 @@ function newCocktail() {
       placeholders.push(" _ ");
 
     }
+    
     document.getElementById("cocktailText").innerHTML = placeholders.join("");
+
     console.log(puzzle);
   }
 
@@ -52,6 +54,7 @@ function newGame() {
   correctGuess = [];
   placeholders = [];
 
+  document.getElementById("gameAlerts").innerHTML = ("Let's get mixing! Add a letter to get started.");
   document.getElementById("guessRemain").innerHTML = ("Ingredients left: " + $guessRemain); document.getElementById("userGuesses").innerHTML = ("Wrong Ingredients:" + usedLetters);
 
   console.log('newGame start')
@@ -96,13 +99,15 @@ document.onkeyup = function (event) {
               if (placeholders.join("") == puzzle) {
 
                 $wins++;
-            
+
+                document.getElementById("cocktailText").innerHTML = placeholders.join("");
+
                 newGame()
             
                 document.getElementById("wins").innerHTML = ("Wins: " + $wins);
                 newCocktail();
                 alert("Nice job! That's a tasty lookin' drink! Play again?");
-                            
+
               }
 
 
