@@ -27,7 +27,7 @@ function newCocktail() {
   for (i = 0; i < puzzle.length; i++) {
 
 
-    if (puzzle[i] == " ") {
+    if (puzzle[i] === " ") {
 
       placeholders.push(" ");
 
@@ -35,7 +35,7 @@ function newCocktail() {
 
     else {
 
-      placeholders.push(" _ ");
+      placeholders.push("_");
 
     }
     
